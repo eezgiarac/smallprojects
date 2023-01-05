@@ -1,29 +1,29 @@
 package Part2;
 
 public class PrimeNumber {//asal
-
-    public static void main(String[] args) {//karekokune kadar bak
+    public static void main(String[] args) {
 //        Scanner input = new Scanner(System.in);
 //        int num = input.nextInt();
-        int num = 1;
+        int num = 121;
+        boolean isPrime = false;
 
+        if (num<0){
+            System.err.println("Prime numbers can not be negative!");
+            System.exit(1);
+        }
         if (num == 0 || num == 1) {
-            System.out.println("NO NO NO");
+            isPrime = false;
         } else {
-            int count = 0;
+
             for (int i = 2; i <= (int) Math.sqrt(num); i++) {
                 if (num % i == 0) {
-                    count++;
+                    isPrime = false;
+                }else{
+                    isPrime = true;
                 }
             }
-            if (count >= 1) {
-                System.out.println("NO NO NO");
-                System.exit(1);
-            }else {
-                System.out.println("Prime ! : " + num);
-            }
         }
-       // System.out.println((int) Math.sqrt(num));
+        System.out.println("number is prime : " + isPrime);
     }
 
 }
