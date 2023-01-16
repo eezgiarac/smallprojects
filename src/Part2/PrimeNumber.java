@@ -4,7 +4,7 @@ public class PrimeNumber {//asal
     public static void main(String[] args) {
 //        Scanner input = new Scanner(System.in);
 //        int num = input.nextInt();
-        int num = 121;
+        int num = 29;
         boolean isPrime = false;
 
         if (num<0){
