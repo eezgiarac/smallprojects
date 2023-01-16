@@ -2,7 +2,7 @@ package Part2;
 
 import java.util.ArrayList;
 
-public class ArmstrongNumber {
+public class ArmstrongNumber {//We need to check each number to see if they are equal or not  their position
     public static void armstrongNumber(int num){
         int compare=0;
         String[] s = (String.valueOf(num)).split("");
