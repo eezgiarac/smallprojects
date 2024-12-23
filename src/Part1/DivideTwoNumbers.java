@@ -20,6 +20,7 @@ public class DivideTwoNumbers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+
         System.out.println("Enter two numbers");
         double divided = input.nextInt();
         double divisor = input.nextInt();
